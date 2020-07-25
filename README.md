@@ -29,9 +29,6 @@ The dataset which is used for this project is New York Citi Bike share data whic
 
 ### CRISP-DM Model
 
-#### 1. Installation:
-   - Anaconda 4.5.12 Distribution
-   - Python 3.7
    
 #### 2. Data understanding and Exploratory Data Analysis
 
@@ -51,7 +48,7 @@ The dataset which is used for this project is New York Citi Bike share data whic
 **4. **
 
 
-!
+
 **5. **
 
 
