@@ -36,31 +36,36 @@ The dataset which is used for this project is New York Citi Bike share data whic
 #### 2. Data understanding and Exploratory Data Analysis
 
 
-**1. 
-
-
-**2. Which are the Most Popular Trips?**
-
-
-**3. Which borough has the highest service usage?**
+**1. ** 
 
 
 
-**4. How long are the most users travelling?**
+**2. **
+
+
+
+**3. ** 
+
+
+
+**4. **
+
 
 !
-**5. Which gender uses the service adequately?**
+**5. **
 
 
 
-**6. Which age group has highest usage?**
+**6. **
 
 
 
-**7. What is the average trip duration based on User Type?**
+**7. **
 
 
-**8. Which user types have high trip duration?**
+
+**8. **
+
 
 
 #### 3. Data preparation
@@ -68,6 +73,7 @@ The dataset which is used for this project is New York Citi Bike share data whic
 
 
 #### 4. Machine Learning
+
 
 
 #### 5. Evaluation
@@ -81,7 +87,9 @@ The dataset which is used for this project is New York Citi Bike share data whic
 #### Future Enhancements
 
 
+
 #### Contributing Project Members
+
 
 |Name     | 
 |---------|
