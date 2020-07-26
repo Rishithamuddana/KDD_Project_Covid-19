@@ -1,8 +1,12 @@
 ## Team Members
 Osama Almasri
+
 Sabda Karkera
+
 Rishitha Muddana 
+
 Raga Preethi Potu
+
 Ming Wu
 
 # Covid-19 Prediction 
