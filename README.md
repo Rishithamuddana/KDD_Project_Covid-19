@@ -33,12 +33,33 @@ The data collected through the NHSN system directly supports this initiative by 
 
 
 # Data Understanding
+ 
+This process is one of the very first steps in the CRISP-DM process model that is required to understand the structure of the data well enough and being able to model data successfully. It obtains data and verifies that it is appropriate for ones needs. This phase includes gathering data, describing it, exploring data and verifying the data quality. Data manipulation and basic statistical techniques are used to further check into the data for their range of values and their distributions.  
 
-   
+
 # Data Preparation
+
+Data preparation is one of the most important steps where the data is collected and preserved for other purposes and needs some refinement before it is ready to use for modeling. Exploratory data analysis (EDA) is first process to analyze data, summarize the main characteristics, and understand the structure and distribution of the data, often with visual methods.
+Our dataset contains many missing values. These columns can be imputed using imputation techniques such as mean, median, mode, or advanced imputation methods such as k-nearest imputation, etc. Another important factor to look into a dataset is to find for the missing values. The nursing home dataset contains missing values and hencefoth can be detected and solved with the help of visualization techniques. We used boxplot visualization to analyze some of the columns and detected the ouliers present in them. After they have been detected, they can be removed using other techniques such as histogram, IQR, Z-Score and scatter plots. Finding the relationship between the variables and treating them accordingly in the pre-processing steps is also considered to be an important factor during the process of modelling. To find the relationship or correlation between the attributes in the dataset, we have used correlation matrix. Certain attributes pairs such as 
+
+Residents Weekly Admissions Covid-19 and Residents weekly Covid-19 deaths
+
+Residents Total Admissions Covid-19 and Residents Total Covid-19 deaths
+
+Residents Weekly all Deaths and Residents Weekly Covid-19 deaths
+
+Residents Weekly confirmed and Staff weekly confirmed Covid-19
+
+Residents Total Covid-19 deaths (Vs) Staff Total confirmed covid-19
+
+Staff weekly confirmed Covid-19 (Vs) Residents total Covid-19 deaths have shown a correlation value between 0.5 to 0.7, which is considered to be the appropriate.
+
+The dataset also contains many categorical attributes and there are some libraries that do not take categorical variables as input. Thus, we convert them into numerical variables. Therfore, in our dataset we used dummy encoding by converting a categorical input variable into continuous variable or a binary variable. Presence of a level is represented by 1 and absence is represented by 0.  
 
 
 # Machine Learning
+
+
 
 
 # Evaluation
