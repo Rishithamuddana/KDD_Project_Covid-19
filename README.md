@@ -18,6 +18,8 @@ COVID-19 is a disease that was identified in Wuhan, China. It is a new strain of
 
 
 
+
+
 # Relevant Domain Information 
 
 
@@ -54,7 +56,13 @@ Residents Total Covid-19 deaths (Vs) Staff Total confirmed covid-19
 
 Staff weekly confirmed Covid-19 (Vs) Residents total Covid-19 deaths have shown a correlation value between 0.5 to 0.7, which is considered to be the appropriate.
 
-The dataset also contains many categorical attributes and there are some libraries that do not take categorical variables as input. Thus, we convert them into numerical variables. Therfore, in our dataset we used dummy encoding by converting a categorical input variable into continuous variable or a binary variable. Presence of a level is represented by 1 and absence is represented by 0.  
+The dataset also contains many categorical attributes and there are some libraries that do not take categorical variables as input. Thus, we convert them into numerical variables. Therfore, in our dataset we used dummy encoding by converting a categorical input variable into continuous variable or a binary variable. Presence of a level is represented by 1 and absence is represented by 0. Some of the other important things that need to be done to the data before we model it are:
+
+1. Look for high cardinality features and drop them.
+
+2. Use Label Encoder to transform non-numerical labels to numerical labels that are always between 0 and n_classes-1. However this may sometimes dcrease the performance of the model
+
+3. 
 
 
 # Machine Learning
