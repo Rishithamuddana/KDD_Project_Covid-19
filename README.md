@@ -1,91 +1,51 @@
+## Team Members
+Osama Almasri
+Sabda Karkera
+Rishitha Muddana 
+Raga Preethi Potu
+Ming Wu
+
 # Covid-19 Prediction 
-This project is part of the Knowledge Discovery in Databases (ITCS - 6162) course from University of North Carolina at Charlotte.
+COVID-19 is a disease that was identified in Wuhan, China. It is a new strain of coronavirus that has not been previously identified in humans and is now being spread througout the world. Coronaviruses are a large family of viruses that are known to cause illness ranging from the common cold to more severe diseases such as Severe Acute Respiratory syndrome (SARS) and Middle East Respiratory Syndrome (MERS). It is the cause of an outbreak of respiratory illness. The people most affected or at the risk of getting very sick from Covid-19 include older adults and people who have serious chronic medical conditions and the ones in the higher-risk population. 
 
 
 
-## Project Objective
-
-### Methods Used  
-
-### Technologies/Libraries
+# Research Question 
 
 
-### Data and Source Description 
-Link to the dataset: 
 
-The dataset which is used for this project is New York Citi Bike share data which gives an extensive information about following attributes:
-*
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+# Relevant Domain Information 
 
 
-### CRISP-DM Model
+# Data and Source Description 
+We have chosen The Nursing Home COVID-19 Public data that includes data reported by nursing homes to the CDC’s National Healthcare Safety Network (NHSN) system COVID-19 Long Term Care Facility Module, including Resident Impact, Facility Capacity, Staff & Personnel, and Supplies & Personal Protective Equipment, and Ventilator Capacity and Supplies Data Elements. The file contains an individual record for each certified Medicare skilled nursing facility/Medicaid nursing facility and the ending date for each collection week that has been updated weekly. This information is used to assist with national surveillance of COVID-19 in nursing homes, and support actions to protect the health and safety of nursing home residents. There could be some linitation in the data set such as the availability of testing may impact the number of confirmed COVID-19 cases facilities report. For example, facilities that did not have the ability to test all residents a few weeks ago would not be able to report all residents with confirmed cases. Similarly, access to testing can vary by state, region, or facility.
+
+### Supporting COVID-19 Testing
+
+The data collected through the NHSN system directly supports this initiative by helping to prioritize the nursing homes with testing needs and an increasing number of cases. 
+
+
+### Link to the dataset: 
+
+
+# Data Understanding
 
    
-#### 2. Data understanding and Exploratory Data Analysis
+# Data Preparation
 
 
-**1. ** 
+# Machine Learning
 
 
-
-**2. **
-
+# Evaluation
 
 
-**3. ** 
+# Known Issues
 
 
-
-**4. **
-
+# Conclusion
 
 
-**5. **
-
-
-
-**6. **
-
-
-
-**7. **
-
-
-
-**8. **
-
-
-
-#### 3. Data preparation
-
-
-
-#### 4. Machine Learning
-
-
-
-#### 5. Evaluation
-
-
-
-#### 6. Conclusion 
-
-
-
-#### Future Enhancements
-
-
-
-#### Contributing Project Members
 
 
 |Name     | 
