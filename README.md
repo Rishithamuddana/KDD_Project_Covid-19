@@ -86,7 +86,7 @@ The nursing home Covid-19 dataset is said to have many missing values. This was 
 
 
 ## Conclusion
-Our main concern is to have a well-prepared data that has been cleaned and preprecessed, which later could be modelled successfully. We will review our process and findings before we model our data and conclude. jiejjdcdcndncndjcuhd  
+Our main concern is to have a well-prepared data that has been cleaned and preprecessed, which later could be modelled successfully. We will review our process and findings before we model our data and conclude. 
 
 
 
