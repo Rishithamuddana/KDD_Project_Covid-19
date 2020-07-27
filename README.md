@@ -36,6 +36,7 @@ We have chosen The Nursing Home COVID-19 Public data that includes data reported
 ## Supporting COVID-19 Testing
 The data collected through the NHSN system directly supports this initiative by helping to prioritize the nursing homes with testing needs and an increasing number of cases.
 
+## Approach
 
 ### Data Understanding
 This process is one of the very first steps in the CRISP-DM process model that is required to understand the structure of the data well enough and being able to model data successfully. It obtains data and verifies that it is appropriate for ones needs. This phase includes gathering data, describing it, exploring data and verifying the data quality. Data manipulation and basic statistical techniques are used to further check into the data for their range of values and their distributions. This can be done usimg exploratory data analysis, which is refered to in short as EDA.   
