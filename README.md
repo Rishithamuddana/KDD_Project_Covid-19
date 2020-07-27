@@ -33,7 +33,7 @@ https://data.cms.gov/Special-Programs-Initiatives-COVID-19-Nursing-Home/COVID-19
  
 We have chosen The Nursing Home COVID-19 Public data that includes data reported by nursing homes to the CDC’s National Healthcare Safety Network (NHSN) system COVID-19 Long Term Care Facility Module, including Resident Impact, Facility Capacity, Staff & Personnel, and Supplies & Personal Protective Equipment, and Ventilator Capacity and Supplies Data Elements. The file contains an individual record for each certified Medicare skilled nursing facility/Medicaid nursing facility and the ending date for each collection week that has been updated weekly. This information is used to assist with national surveillance of COVID-19 in nursing homes, and support actions to protect the health and safety of nursing home residents. There could be some linitation in the data set such as the availability of testing may impact the number of confirmed COVID-19 cases facilities report. For example, facilities that did not have the ability to test all residents a few weeks ago would not be able to report all residents with confirmed cases. Similarly, access to testing can vary by state, region, or facility. This dataset contains 123k rows and 59 columns, where each row is a nursing home.
 
-## Supporting COVID-19 Testing
+### Supporting COVID-19 Testing
 The data collected through the NHSN system directly supports this initiative by helping to prioritize the nursing homes with testing needs and an increasing number of cases.
 
 ## Approach
