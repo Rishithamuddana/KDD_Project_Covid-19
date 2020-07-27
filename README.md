@@ -39,7 +39,9 @@ The data collected through the NHSN system directly supports this initiative by 
 ## Approach
 
 ### Data Understanding
-This process is one of the very first steps in the CRISP-DM process model that is required to understand the structure of the data well enough and being able to model data successfully. It obtains data and verifies that it is appropriate for ones needs. This phase includes gathering data, describing it, exploring data and verifying the data quality. Data manipulation and basic statistical techniques are used to further check into the data for their range of values and their distributions. This can be done usimg exploratory data analysis, which is refered to in short as EDA.   
+This process is one of the very first steps in the CRISP-DM process model that is required to understand the structure of the data well enough and being able to model data successfully. It obtains data and verifies that it is appropriate for ones needs. This phase includes gathering data, describing it, exploring data and verifying the data quality. Data manipulation and basic statistical techniques are used to further check into the data for their range of values and their distributions. This can be done usimg exploratory data analysis, which is refered to in short as EDA. 
+
+In our dataset, we had to check for the correlation amongst variables and found out that there were variables that were highly correlated, less correlated and not correlated at all. The variables such as "Residents Weekly confirmed", "Staff weekly confirmed Covid-19", "Residents Total Covid-19 deaths", "Residents weekly Covid-19 deaths" have good correlation as they all showed a correlation value between 0.5-0.7. Hence, these variables can be used against each other and predict the target variable.
 
 
 ### Data Preparation
