@@ -17,7 +17,7 @@ In the project that we are implementing, we wish to predict if the residents of 
 
 
 ## Research Question 
-Our main aim is to find if the residents of a nursing home confirmed with Covid-19 have an affect on the staff that have been confirmed of Covid-19 of that particular nursing home.
+To find if the residents of a nursing home confirmed with Covid-19 have an affect on the staff that have been confirmed of Covid-19 of that particular nursing home.
 
 
 ## Relevant Domain Information 
