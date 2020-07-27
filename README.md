@@ -10,7 +10,7 @@ Raga Preethi Potu
 Ming Wu
 
 
-## Covid-19 Prediction 
+## Project Introduction
 COVID-19 is a disease that was identified in Wuhan, China. It is a new strain of coronavirus that has not been previously identified in humans and is now being spread througout the world. Coronaviruses are a large family of viruses that are known to cause illness ranging from the common cold to more severe diseases such as Severe Acute Respiratory syndrome (SARS) and Middle East Respiratory Syndrome (MERS). It is the cause of an outbreak of respiratory illness. The people most affected or at the risk of getting very sick from Covid-19 include older adults and people who have serious chronic medical conditions and the ones in the higher-risk population. 
 
 In the project that we are implementing, we wish to predict if the residents of a nursing home confirmed with Covid-19 have an affect on the staff of that particular nursing home.
