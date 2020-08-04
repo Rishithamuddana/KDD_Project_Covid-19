@@ -19,7 +19,7 @@ In the project that we are implementing, we wish to predict if the residents of 
 
 
 ## Research Question 
-If the top shortages(shortage of masks, staff, etc) contribute the most to the total number of Covid-19 cases.
+Does top shortages(shortage of masks, staff, etc) contribute the most to the total number of Covid-19 cases.
 
 
 ## Relevant Domain Information 
