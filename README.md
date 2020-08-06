@@ -74,38 +74,38 @@ We used box plot visualization to analyze some of the columns and detected the o
 Staff weekly confirmed COVID-19 (Vs) Residents total COVID-19 deaths have shown a correlation value between 0.5 to 0.7, which is considered to be appropriate.
 The dataset also contains many categorical attributes and there are some libraries that do not take categorical variables as input. Thus, we convert them into numerical variables. Therefore, in our dataset we used dummy encoding by converting a categorical input variable into a continuous variable or a binary variable. 
 
-The Presence of a level is represented by 1 and absence is represented by 0. Some of the other important things that can also be done to the data before we model it are:
+The Presence of a level is represented by 1 and absence is represented by 0. Some of the other important things that were done to the data before we model it are:
 
-•	 Look for high cardinality features and drop them.
+•	 Looked out for high cardinality features and droped them.
 
-•	 Use Label Encoder to transform non-numerical labels to numerical labels that are always between 0 and n_classes-1. However this may sometimes decrease the performance of the model
+•	 Use Label Encoder to transform non-numerical labels to numerical labels that are always between 0 and n_classes-1. However this may sometimes decrease the performance of the model.
 
-•	 Remove the records in which the majority of variables are empty
+•	 Removed the records in which the majority of variables were empty.
 
-•	 Remove the records marked as Not “SubmittedData” and the records fail to pass Quality Assurance Check
+•	 Removed the records marked as Not “SubmittedData” and the records that failed to pass Quality Assurance Check.
 
-•	 For the remaining data after the above two steps, drop “SubmittedData” and “PassedQualityAssuranceCheck” since they only have one value (i.e., “Y”)
+•	 For the remaining data after the above two steps, records “SubmittedData” and “PassedQualityAssuranceCheck” were dropped since they only had one value (i.e., “Y”)
 
-•  Remove the variables that are empty for more than two thirds records
+•  Removed the variables that were empty for more than two thirds records
 
-•	 Because the maximum capacity of all nursing homes in the dataset is 815, it is impossible for the number of occupied beds of any nursing home in the dataset to exceed 815. Therefore, for outlier handling, the number of occupied beds at a given nursing home is capped at the capacity of that nursing home (i.e., 100% occupancy)
+•	 It was also observed that since the maximum capacity of all nursing homes in the dataset was 815, it is impossible for the number of occupied beds of any nursing home in the dataset to exceed 815. Therefore, for outlier handling, the number of occupied beds at a given nursing home was capped at the capacity of that nursing home (i.e., 100% occupancy)
 
 ![](Images/BoxPlot1.png)
 
 ![](Images/Code1.png)
 
-The number of deaths per 1000 residents should not exceed 1000. Therefore, as outlier handling, the records contrary to that are removed;
+The number of deaths per 1000 residents should not exceed 1000. Therefore, as outlier handling, the records contrary to that were removed;
 
 
 ![](Images/Boxplot2.png)
 
 ![](Images/Boxplot3.png)
 
-For data imputation, the mode is used to impute categorical variables. The mean is used to impute numerical valued variables.
+For data imputation, the mode is used to impute categorical variables and the mean is used to impute numerical valued variables.
 
 
 ### Machine Learning
-We are dealing with a supervised learning model as our nursing home dataset contains both input and output variables. A supervised learning contains two types of learning problems out of which the regression model could possibly be related to the dataset as our target variable is a real value. Hence, it is used to predict a class label.
+We are dealing with a supervised learning model as our nursing home dataset contains both input and output variables. A supervised learning contains two types of learning problems out of which, the regression model could possibly be related to the dataset as our target variable is a real value. Hence, it is used to predict a class label.
 Since the number of COVID-19 cases can be highly influenced by the number of residents or number of beds in the facility, we chose to create a new variable; CovidtoOccupancyRatio. This ratio has been calculated by dividing the number of resident confirmed cases by the total number of occupied beds.
 
 ![](Images/Code2.png)
@@ -135,17 +135,14 @@ The nursing home COVID-19 dataset is said to have many missing values. This was 
 
 There were also some variables that were highly correlated that would be difficult for us to change one variable without having to change the other. There were also variables that were less or not correlated at all. This could lead to unpredictability of the target variable. Our dataset has many categorical variables that could be a problem in evaluating our model. This can be solved by simply assigning numbers to categorical variables by performing dummy encoding.
 
-
 We faced a challenge creating an appropriate target variable since the size of the nursing home can have an impact on the total number of COVID-19 cases. A trial and error with the different derived target variables was necessary to find a good metric. 
 
 ## Conclusion
-Our dataset had many missing values so we used imputation techniques such as mean, median, mode, or advanced imputation methods such as k-nearest imputation. We also used box plot visualization to analyze some of the columns and detected the outliers present in them. 
+Our dataset had many missing values so we used imputation techniques such as mean, median, mode, or advanced imputation methods such as k-nearest imputation. We also used box plot visualization to analyze some of the columns and detected the outliers present in them. We found the relationship between the variables and treated them accordingly.
 
-We found the relationship between the variables and treated them accordingly.
 The outcome of the first trial in the Linear Regression was 4% of R-squared and outcome of the last model was an accuracy of 61%. This is a good starting point to predicting COVID-19 severity of low, medium or high in nursing homes. This can definitely improve in future work and as we learn more about this virus.
 
-
-A future work to improve the results is to collect newer data as the testing capacity is increasing in the United States and the CDC is setting better standard operating procedures to collect and report data. At the beginning of this pandemic, both testing capacity and the lack of standardization in data collection have caused the dataset to be inaccurate which can cause any predictive model to be inaccurate as a result of that
+A future work to improve the results is to collect newer data as the testing capacity is increasing in the United States and the CDC is setting better standard operating procedures to collect and report data. At the beginning of this pandemic, both testing capacity and the lack of standardization in data collection have caused the dataset to be inaccurate which can cause any predictive model to be inaccurate as a result of that.
 
 
 
