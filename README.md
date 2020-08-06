@@ -61,30 +61,30 @@ Data preparation is one of the most important steps where the data is collected 
 
 We used box plot visualization to analyze some of the columns and detected the outliers present in them. After they have been detected, they can be removed using other techniques such as histogram, IQR, Z-Score and scatter plots. Finding the relationship between the variables and treating them accordingly in the pre-processing steps is also considered to be an important factor during the process of modeling. To find the relationship or correlation between the attributes in the dataset, we have used correlation matrix. Certain attributes pairs such as:
 
-•	Residents Weekly Admissions COVID-19 and Residents weekly COVID-19 deaths
-•	Residents Total Admissions COVID-19 and Residents Total COVID-19 deaths
-•	Residents Weekly all Deaths and Residents Weekly COVID-19 deaths
-•	Residents Weekly confirmed and Staff weekly confirmed COVID-19
-•	Residents Total COVID-19 deaths (Vs) Staff Total confirmed COVID-19
+ •	Residents Weekly Admissions COVID-19 and Residents weekly COVID-19 deaths
+ •	Residents Total Admissions COVID-19 and Residents Total COVID-19 deaths
+ •	Residents Weekly all Deaths and Residents Weekly COVID-19 deaths
+ •	Residents Weekly confirmed and Staff weekly confirmed COVID-19
+ •	Residents Total COVID-19 deaths (Vs) Staff Total confirmed COVID-19
 
 Staff weekly confirmed COVID-19 (Vs) Residents total COVID-19 deaths have shown a correlation value between 0.5 to 0.7, which is considered to be appropriate.
 The dataset also contains many categorical attributes and there are some libraries that do not take categorical variables as input. Thus, we convert them into numerical variables. Therefore, in our dataset we used dummy encoding by converting a categorical input variable into a continuous variable or a binary variable. 
 
 The Presence of a level is represented by 1 and absence is represented by 0. Some of the other important things that can also be done to the data before we model it are:
 
-•	Look for high cardinality features and drop them.
+•	 Look for high cardinality features and drop them.
 
-•	Use Label Encoder to transform non-numerical labels to numerical labels that are always between 0 and n_classes-1. However this may sometimes decrease the performance of the model
+•	 Use Label Encoder to transform non-numerical labels to numerical labels that are always between 0 and n_classes-1. However this may sometimes decrease the performance of the model
 
-•	Remove the records in which the majority of variables are empty
+•	 Remove the records in which the majority of variables are empty
 
-•	Remove the records marked as Not “SubmittedData” and the records fail to pass Quality Assurance Check
+•	 Remove the records marked as Not “SubmittedData” and the records fail to pass Quality Assurance Check
 
-•	For the remaining data after the above two steps, drop “SubmittedData” and “PassedQualityAssuranceCheck” since they only have one value (i.e., “Y”)
+•	 For the remaining data after the above two steps, drop “SubmittedData” and “PassedQualityAssuranceCheck” since they only have one value (i.e., “Y”)
 
-• Remove the variables that are empty for more than two thirds records
+•  Remove the variables that are empty for more than two thirds records
 
-•	Because the maximum capacity of all nursing homes in the dataset is 815, it is impossible for the number of occupied beds of any nursing home in the dataset to exceed 815. Therefore, for outlier handling, the number of occupied beds at a given nursing home is capped at the capacity of that nursing home (i.e., 100% occupancy)
+•	 Because the maximum capacity of all nursing homes in the dataset is 815, it is impossible for the number of occupied beds of any nursing home in the dataset to exceed 815. Therefore, for outlier handling, the number of occupied beds at a given nursing home is capped at the capacity of that nursing home (i.e., 100% occupancy)
 
 ![](Images/BoxPlot1.png)
 
