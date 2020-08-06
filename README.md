@@ -69,14 +69,12 @@ The dataset also contains many categorical attributes and there are some librari
 Look for high cardinality features and drop them.
 Use Label Encoder to transform non-numerical labels to numerical labels that are always between 0 and n_classes-1. However this may sometimes decrease the performance of the model
 
-The followings are what we did for the data cleaning, followed by outlier handling and data imputation:
- 
-Remove the records in which the majority of variables are empty;
-Remove the records marked as Not “SubmittedData” and the records fail to pass Quality Assurance Check;
-For the remaining data after the above two steps, drop “SubmittedData” and “PassedQualityAssuranceCheck” since they only have one value (i.e., “Y”);
-Remove the variables that are empty for more than two thirds records;
-Because the maximum capacity of all nursing homes in the dataset is 815, it is impossible for the number of occupied beds of any nursing home in the dataset to exceed 815. Therefore, for outlier handling, the number of occupied beds at a given nursing home is capped at the capacity of that nursing home (i.e., 100% occupancy);
+•	Remove the records in which the majority of variables are empty
+•	Remove the records marked as Not “SubmittedData” and the records fail to pass Quality Assurance Check
+•	For the remaining data after the above two steps, drop “SubmittedData” and “PassedQualityAssuranceCheck” since they only have one value (i.e., “Y”)
 
+• Remove the variables that are empty for more than two thirds records
+•	Because the maximum capacity of all nursing homes in the dataset is 815, it is impossible for the number of occupied beds of any nursing home in the dataset to exceed 815. Therefore, for outlier handling, the number of occupied beds at a given nursing home is capped at the capacity of that nursing home (i.e., 100% occupancy)
 
 ![](Images/BoxPlot1.png)
 ![]()
