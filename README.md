@@ -78,7 +78,7 @@ Remove the variables that are empty for more than two thirds records;
 Because the maximum capacity of all nursing homes in the dataset is 815, it is impossible for the number of occupied beds of any nursing home in the dataset to exceed 815. Therefore, for outlier handling, the number of occupied beds at a given nursing home is capped at the capacity of that nursing home (i.e., 100% occupancy);
 
 
-![]()
+![](![BoxPlot1](https://user-images.githubusercontent.com/57869873/89548986-bf8e4780-d7d5-11ea-85d7-91b4a9e1930c.png))
 ![]()
 
 The number of deaths per 1000 residents should not exceed 1000. Therefore, as outlier handling, the records contrary to that are removed;
