@@ -80,7 +80,8 @@ Use Label Encoder to transform non-numerical labels to numerical labels that are
 •	Because the maximum capacity of all nursing homes in the dataset is 815, it is impossible for the number of occupied beds of any nursing home in the dataset to exceed 815. Therefore, for outlier handling, the number of occupied beds at a given nursing home is capped at the capacity of that nursing home (i.e., 100% occupancy)
 
 ![](Images/BoxPlot1.png)
-![]()
+
+![](Images/Code1.png)
 
 The number of deaths per 1000 residents should not exceed 1000. Therefore, as outlier handling, the records contrary to that are removed;
 
