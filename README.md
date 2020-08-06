@@ -62,9 +62,13 @@ Data preparation is one of the most important steps where the data is collected 
 We used box plot visualization to analyze some of the columns and detected the outliers present in them. After they have been detected, they can be removed using other techniques such as histogram, IQR, Z-Score and scatter plots. Finding the relationship between the variables and treating them accordingly in the pre-processing steps is also considered to be an important factor during the process of modeling. To find the relationship or correlation between the attributes in the dataset, we have used correlation matrix. Certain attributes pairs such as:
 
  •	Residents Weekly Admissions COVID-19 and Residents weekly COVID-19 deaths
+ 
  •	Residents Total Admissions COVID-19 and Residents Total COVID-19 deaths
+ 
  •	Residents Weekly all Deaths and Residents Weekly COVID-19 deaths
+ 
  •	Residents Weekly confirmed and Staff weekly confirmed COVID-19
+ 
  •	Residents Total COVID-19 deaths (Vs) Staff Total confirmed COVID-19
 
 Staff weekly confirmed COVID-19 (Vs) Residents total COVID-19 deaths have shown a correlation value between 0.5 to 0.7, which is considered to be appropriate.
@@ -106,7 +110,9 @@ Since the number of COVID-19 cases can be highly influenced by the number of res
 
 ![](Images/Code2.png)
 
-By setting this as a target variable, we are looking to predict a numerical variable which is the total number of resident cases in the particular week (CovidtoOccupancyRatio). We took a subset of the dataset that was mainly focused on the shortages of Personal Protective Equipment (PPE’s) as independent variables to predict the number of resident confirmed cases. A linear regression model was used but unfortunately, a lot of noise in the data made this target variable very difficult to predict and an R-squared of only 4% was achieved. With these results, we moved to another choice which is creating another target variable which takes the ratio of staff and residents confirmed with COVID-19 to the total number of available beds.
+By setting this as a target variable, we are looking to predict a numerical variable which is the total number of resident cases in the particular week (CovidtoOccupancyRatio). We took a subset of the dataset that was mainly focused on the shortages of Personal Protective Equipment (PPE’s) as independent variables to predict the number of resident confirmed cases.
+
+A linear regression model was used but unfortunately, a lot of noise in the data made this target variable very difficult to predict and an R-squared of only 4% was achieved. With these results, we moved to another choice which is creating another target variable which takes the ratio of staff and residents confirmed with COVID-19 to the total number of available beds.
 
 ![](Images/Code3.png)
 
@@ -133,7 +139,9 @@ There were also some variables that were highly correlated that would be difficu
 We faced a challenge creating an appropriate target variable since the size of the nursing home can have an impact on the total number of COVID-19 cases. A trial and error with the different derived target variables was necessary to find a good metric. 
 
 ## Conclusion
-Our dataset had many missing values so we used imputation techniques such as mean, median, mode, or advanced imputation methods such as k-nearest imputation. We also used box plot visualization to analyze some of the columns and detected the outliers present in them. We found the relationship between the variables and treated them accordingly.
+Our dataset had many missing values so we used imputation techniques such as mean, median, mode, or advanced imputation methods such as k-nearest imputation. We also used box plot visualization to analyze some of the columns and detected the outliers present in them. 
+
+We found the relationship between the variables and treated them accordingly.
 The outcome of the first trial in the Linear Regression was 4% of R-squared and outcome of the last model was an accuracy of 61%. This is a good starting point to predicting COVID-19 severity of low, medium or high in nursing homes. This can definitely improve in future work and as we learn more about this virus.
 
 
