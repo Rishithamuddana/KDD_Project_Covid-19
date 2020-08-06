@@ -44,7 +44,7 @@ This dataset contains 123k rows and 59 columns, where each row is a nursing home
 This process is one of the very first steps in the CRISP-DM process model that is required to understand the structure of the data well enough and be able to model data successfully. It obtains data and verifies that it is appropriate for one's needs. This phase includes gathering data, describing it, exploring data and verifying the data quality. Data manipulation and basic statistical techniques are used to further check into the data for their range of values and their distributions. This can be done using exploratory data analysis, which is referred to in short as EDA.
 
 In our data, we saw that there were 123,143 records and 59 columns. We had numerical and categorical data such as float, integer, and object.
-The data has been collected from certified nursing facilities nationwide, with each data entry being an individual record for each certified nursing facility with an ending date for each collection week starting from May 24. 
+The data had been collected from certified nursing facilities nationwide, with each data entry being an individual record for each certified nursing facility with an ending date for each collection week starting from May 24. 
 
 The main attributes are about COVID-19 related medical information (such as Personal Protective Equipment, test availability, positive case, and death count for the residents and staff) of the nursing facility.
 
